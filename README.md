@@ -19,8 +19,8 @@
 
 <table>
   <tr>
-    <th>DEFAULT LORE (by Face)</th>
-    <th>PRETTY LORE (by Face)</th>
+    <th>DEFAULT LORE RENDER</th>
+    <th>PRETTY LORE RENDER</th>
   </tr>
   <tr>
     <td align="center"><img width="420" alt="Default lore: first item" src="https://github.com/user-attachments/assets/fe19234f-2f19-49f9-b3c6-44fa6f5f5e5c" /></td>
