@@ -34,10 +34,21 @@
 
 <sub>All screenshots were taken in the browser, running the lightweight PHP utility.</sub>
 
-<img width="644" height="60" alt="image" src="https://github.com/user-attachments/assets/f804abfe-2341-4615-a881-c9d69fb8113a" />
-<img width="599" height="540" alt="image" src="https://github.com/user-attachments/assets/7c06cd23-0107-475b-95c1-57313ba5460c" />
-<img width="582" height="515" alt="image" src="https://github.com/user-attachments/assets/fcdf6b4d-363c-4a27-8d32-28afd4d8f7ea" />
+<br>
+<table>
+  <tr>
+    <th colspan="2">NETWORTH</th>
+  </tr>
+  <tr>
+    <td colspan="2" align="center"><img width="644" alt="Networth: summary bar" src="https://github.com/user-attachments/assets/f804abfe-2341-4615-a881-c9d69fb8113a" /></td>
+  </tr>
+  <tr>
+    <td align="center" valign="top"><img width="400" alt="Networth: screenshot 2" src="https://github.com/user-attachments/assets/7c06cd23-0107-475b-95c1-57313ba5460c" /></td>
+    <td align="center" valign="top"><img width="400" alt="Networth: screenshot 3" src="https://github.com/user-attachments/assets/fcdf6b4d-363c-4a27-8d32-28afd4d8f7ea" /></td>
+  </tr>
+</table>
 
+<sub>All screenshots were taken in the browser, running the lightweight PHP utility.</sub>
 
 </div>
 
