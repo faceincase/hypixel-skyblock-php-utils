@@ -23,12 +23,12 @@
     <th>PRETTY LORE (by Face)</th>
   </tr>
   <tr>
-    <td><img width="420" alt="Before: first screen" src="https://github.com/user-attachments/assets/fe19234f-2f19-49f9-b3c6-44fa6f5f5e5c" /></td>
-    <td><img width="420" alt="After: first screen" src="https://github.com/user-attachments/assets/eb4314f3-417a-4cd6-9329-ee40108dc137" /></td>
+    <td align="center"><img width="420" alt="Before: first screen" src="https://github.com/user-attachments/assets/fe19234f-2f19-49f9-b3c6-44fa6f5f5e5c" /></td>
+    <td align="center"><img width="420" alt="After: first screen" src="https://github.com/user-attachments/assets/eb4314f3-417a-4cd6-9329-ee40108dc137" /></td>
   </tr>
   <tr>
-    <td valign="top"><img height="600" alt="Before: second screen" src="https://github.com/user-attachments/assets/492cf10b-16ff-4e35-be4f-d1c7f55a4428" /></td>
-    <td valign="top"><img height="600" alt="After: second screen" src="https://github.com/user-attachments/assets/f5984693-bb6b-40ea-baa5-0ad7b0d422a0" /></td>
+    <td align="center" valign="top"><img height="600" alt="Before: second screen" src="https://github.com/user-attachments/assets/492cf10b-16ff-4e35-be4f-d1c7f55a4428" /></td>
+    <td align="center" valign="top"><img height="600" alt="After: second screen" src="https://github.com/user-attachments/assets/f5984693-bb6b-40ea-baa5-0ad7b0d422a0" /></td>
   </tr>
 </table>
 
