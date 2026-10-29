@@ -17,8 +17,7 @@
 
 </div>
 
-<p><em>All screenshots were taken in the browser, running the lightweight PHP utility.</em></p>
-
+<p align="center"><sub>All screenshots were taken in the browser, running the lightweight PHP utility.</sub></p>
 <table>
   <tr>
     <th>DEFAULT LORE</th>
