@@ -17,8 +17,15 @@
 
 </div>
 
+BEFORE:
 <img width="540" height="326" alt="image" src="https://github.com/user-attachments/assets/fe19234f-2f19-49f9-b3c6-44fa6f5f5e5c" />
+AFTER:
 <img width="550" height="328" alt="image" src="https://github.com/user-attachments/assets/eb4314f3-417a-4cd6-9329-ee40108dc137" />
+
+BEFORE:
+<img width="485" height="1137" alt="image" src="https://github.com/user-attachments/assets/492cf10b-16ff-4e35-be4f-d1c7f55a4428" />
+AFTER:
+<img width="649" height="1079" alt="image" src="https://github.com/user-attachments/assets/f5984693-bb6b-40ea-baa5-0ad7b0d422a0" />
 
 
 ## What's inside
