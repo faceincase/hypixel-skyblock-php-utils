@@ -13,25 +13,28 @@
 ![Size](https://img.shields.io/badge/size-58.93%20KB-informational)
 ![Discord](https://img.shields.io/badge/Discord-fac.e-5865F2?logo=discord&logoColor=white)
 
-[What's inside](#whats-inside) · [Lore tooltips](#lorephp-normal-lore-vs-pretty-lore) · [Networth](#networthphp-how-networth-is-calculated) · [Need help?](#need-help-or-a-custom-project)
+[Lore tooltips](#lore-tooltips-lorephp) · [Networth](#networth-networthphp) · [Technical reference](#technical-reference) · [Need help?](#need-help-or-a-custom-project)
 
-</div>
+<br>
 
-<p align="center"><sub>All screenshots were taken in the browser, running the lightweight PHP utility.</sub></p>
 <table>
   <tr>
     <th>DEFAULT LORE</th>
     <th>PRETTY LORE (by Face)</th>
   </tr>
   <tr>
-    <td align="center"><img width="420" alt="Before: first screen" src="https://github.com/user-attachments/assets/fe19234f-2f19-49f9-b3c6-44fa6f5f5e5c" /></td>
-    <td align="center"><img width="420" alt="After: first screen" src="https://github.com/user-attachments/assets/eb4314f3-417a-4cd6-9329-ee40108dc137" /></td>
+    <td align="center"><img width="420" alt="Default lore: first item" src="https://github.com/user-attachments/assets/fe19234f-2f19-49f9-b3c6-44fa6f5f5e5c" /></td>
+    <td align="center"><img width="420" alt="Pretty lore: first item" src="https://github.com/user-attachments/assets/eb4314f3-417a-4cd6-9329-ee40108dc137" /></td>
   </tr>
   <tr>
-    <td align="center" valign="top"><img height="600" alt="Before: second screen" src="https://github.com/user-attachments/assets/492cf10b-16ff-4e35-be4f-d1c7f55a4428" /></td>
-    <td align="center" valign="top"><img height="600" alt="After: second screen" src="https://github.com/user-attachments/assets/f5984693-bb6b-40ea-baa5-0ad7b0d422a0" /></td>
+    <td align="center" valign="top"><img height="600" alt="Default lore: second item" src="https://github.com/user-attachments/assets/492cf10b-16ff-4e35-be4f-d1c7f55a4428" /></td>
+    <td align="center" valign="top"><img height="600" alt="Pretty lore: second item" src="https://github.com/user-attachments/assets/f5984693-bb6b-40ea-baa5-0ad7b0d422a0" /></td>
   </tr>
 </table>
+
+<sub>All screenshots were taken in the browser, running the lightweight PHP utility.</sub>
+
+</div>
 
 ## What's inside
 
@@ -43,20 +46,18 @@ Two small, dependency-light PHP files taken from a Hypixel SkyBlock profile view
 | [`networth.php`](networth.php) | Estimates the value of every item and pet a player owns and adds it up into a **networth** | **33.94 KB** |
 | | **Total** | **58.93 KB** |
 
+**Highlights**
 
-## Need help or a custom project?
+- 🎨 Colour-coded lore (`§6Hyperion`) rendered as real Minecraft tooltips, with a one-click **Pretty Lore** mode
+- ⚡ One shared tooltip element, so pages stay light even with thousands of items
+- 💰 Networth from armor, inventories, vaults, wardrobe, bags, loadouts, pets, essence, purse and bank
+- 🔓 No API key needed; everything is cached on disk
 
-Stuck setting this up, or want something like it built for your own project? Message me on Discord, I'm happy to help.
-<br>
-Discord: **`fac.e`** 
-<br>
-When you write, it helps to include what you are trying to build, a link or a short description of your current code, and any error message.
+---
 
+## Lore tooltips (`lore.php`)
 
-
-## `lore.php`: normal lore vs pretty lore
-
-### What you get
+### Quick start
 
 - `minecraftTextToHtml()` and `minecraftTooltipHtml()` turn colour-coded lore (`§6Hyperion`, `§7Damage: §c+260`) into HTML.
 - `renderLoreTrigger()` makes any element show that tooltip on hover or keyboard focus.
@@ -87,7 +88,17 @@ require 'lore.php';
 Options for `renderLoreTrigger()` (its fifth argument): `'data-wide' => true` stops line wrapping, `'data-plain' => true` turns
 off the dotted stat lines (use it for list-style tooltips such as a networth breakdown).
 
-### How it works
+### What Pretty Lore changes
+
+- Centered item name with a `✦` divider
+- Rarity footer (`LEGENDARY SWORD`) moved under the name as a small bordered tag; `Breaking Power 9` becomes a green `BP 9` tag
+- Stat lines become `Damage  . . . . .  +75` with a `▸` marker
+- Abilities get a `✦` marker; `Est. item Value:` lines are centered with a `⛁`
+- Gemstones shown as a row of pixel-art circles (colored if a gem is in, gray if empty)
+- Drill fuel shown as a pixel progress bar
+
+<details>
+<summary><b>How it works</b></summary>
 
 1. **Colour codes → HTML (PHP).** The text is split on `§x` with `preg_split`. Each piece becomes a `<span>`: a colour code
    gives it a class `mc-c0`…`mc-cf` (the sixteen Minecraft colours, each also defines a darker shadow colour), `§l §o §n §m` add
@@ -115,7 +126,10 @@ off the dotted stat lines (use it for list-style tooltips such as a networth bre
      built with CSS `clip-path` polygons on an 8×8 pixel grid;
    - `Fuel: 1,038/3k` (drills) becomes a `Drill Fuel` divider and a pixel progress bar with the amount in the middle.
 
-### What it uses
+</details>
+
+<details>
+<summary><b>What it uses</b></summary>
 
 - PHP: `preg_split`, `htmlspecialchars`, no libraries.
 - JavaScript: vanilla (DOM, `<template>`, `localStorage`, `setInterval`), no libraries.
@@ -123,24 +137,17 @@ off the dotted stat lines (use it for list-style tooltips such as a networth bre
 - One external file: the Minecraft font `minecraft.woff2` from `cdn.jsdelivr.net` (South-Paw/typeface-minecraft). Remove the `@font-face`
   line in the CSS if you do not want that request; the tooltip then falls back to Courier.
 
-### Size breakdown of `lore.php`
-
-| Part | Bytes | KB |
-| --- | ---: | ---: |
-| PHP functions and comments | 5,001 | 4.88 |
-| CSS (inside `loreCss()`) | 6,667 | 6.51 |
-| JavaScript (inside `loreScript()`) | 13,915 | 13.59 |
-| **File** | **25,583** | **24.98** |
+</details>
 
 ---
 
-## `networth.php`: how networth is calculated
+## Networth (`networth.php`)
 
 ```
 networth = purse + bank + essence + Σ item values + Σ pet values
 ```
 
-### Usage
+### Quick start
 
 ```bash
 composer require aternos/nbt       # reads the gzipped NBT inventories of the API
@@ -167,7 +174,8 @@ inventory string → slots with name, lore and value), `getItemPrice()` (one id)
 `php networth.php refresh` rebuilds the market caches from the command line. Set `define('NETWORTH_CACHE_DIR', '/path')` before
 including the file to choose where the cache is written (default: `./cache`).
 
-### How an item is valued
+<details>
+<summary><b>How an item is valued</b></summary>
 
 1. **Base price.** The item's own price: the Bazaar *instant buy* price if the Bazaar has it (multiplied by the stack size),
    otherwise the cheapest **BIN** auction under the item's display name. Dungeon stars (`✪`) and symbols are stripped from
@@ -184,20 +192,35 @@ including the file to choose where the cache is written (default: `./cache`).
    - **gemstones**: the price of each `QUALITY_TYPE_GEM`, plus the coins and items that were spent to unlock gem slots.
 3. **Unpriced parts** (nobody sells them) count as 0 and are listed in the result, so a gap is visible and not silently wrong.
 
-### How a pet is valued
+</details>
+
+<details>
+<summary><b>How a pet is valued</b></summary>
 
 The Hypixel API has no pet levels, so the level tables come from the NotEnoughUpdates repo. A pet is valued from the cheapest BIN
 listing of the **same pet and rarity** at level 200, 100 or 1 (the level band). Levels in between are interpolated by XP between
 the level 1 and the level 100 listing. The held item and the skin are added on top.
 
-### How the total is assembled
+</details>
+
+<details>
+<summary><b>How the total is assembled</b></summary>
 
 `calculatePlayerNetworth()` decodes and values: armor, equipment, inventory, ender chest, personal vault, wardrobe, accessory bag and
 other bags, backpacks and **loadouts** (the stored armor/equipment sets of every loadout, each set counted **once** however many
 loadouts use it; the worn set is skipped because it is already in your armor and equipment). Then pets, then essence (amount ×
 the Bazaar price of that essence), and finally purse and bank. Sacks are not included.
 
-### Where the data comes from, and what is cached
+</details>
+
+---
+
+## Technical reference
+
+<details>
+<summary><b>Where the data comes from, and what is cached</b></summary>
+
+<br>
 
 Everything is cached on disk (`NETWORTH_CACHE_DIR`) as JSON with `info`, `source` and `fetched_at`, so a file tells you what it is.
 
@@ -214,7 +237,35 @@ The Auction House has to be read page by page (~30 s), so a stale snapshot is se
 the first call waits for it. All requests are plain `file_get_contents`, so `allow_url_fopen` must be on. None of these
 endpoints needs an API key.
 
-### Size breakdown of `networth.php`
+</details>
+
+<details>
+<summary><b>Known limitations</b></summary>
+
+- Unpriced enchants (for example Compact IX/X, Smelting Touch, Efficiency V without Silex) count as 0.
+- A base auction listing can already include upgrades, which may double-count a part. Reforge application fees are not included.
+- Pets with no auction listing have no value; level 1 listings that are outliers are clamped.
+- The bank is only known if the player's banking API is on; pass 0 otherwise.
+- Reforge stones and pet levels are community data (NotEnoughUpdates) and can lag behind the game.
+- Prices are "what you would pay now", not "what you would get if you sold".
+
+</details>
+
+<details>
+<summary><b>Size breakdown</b></summary>
+
+<br>
+
+**`lore.php`**
+
+| Part | Bytes | KB |
+| --- | ---: | ---: |
+| PHP functions and comments | 5,001 | 4.88 |
+| CSS (inside `loreCss()`) | 6,667 | 6.51 |
+| JavaScript (inside `loreScript()`) | 13,915 | 13.59 |
+| **File** | **25,583** | **24.98** |
+
+**`networth.php`**
 
 | Part | Approx. lines |
 | --- | ---: |
@@ -224,14 +275,17 @@ endpoints needs an API key.
 | Inventory decoding, loadouts, essence, totals, tooltip lines, CLI refresh | ~230 |
 | **File: 795 lines, 34,759 bytes = 33.94 KB** | |
 
-### Known limitations
+</details>
 
-- Unpriced enchants (for example Compact IX/X, Smelting Touch, Efficiency V without Silex) count as 0.
-- A base auction listing can already include upgrades, which may double-count a part. Reforge application fees are not included.
-- Pets with no auction listing have no value; level 1 listings that are outliers are clamped.
-- The bank is only known if the player's banking API is on; pass 0 otherwise.
-- Reforge stones and pet levels are community data (NotEnoughUpdates) and can lag behind the game.
-- Prices are "what you would pay now", not "what you would get if you sold".
+---
+
+## Need help or a custom project?
+
+Stuck setting this up, or want something like it built for your own project? Message me on Discord, I'm happy to help.
+
+Discord: **`fac.e`**
+
+When you write, it helps to include what you are trying to build, a link or a short description of your current code, and any error message.
 
 ---
 
