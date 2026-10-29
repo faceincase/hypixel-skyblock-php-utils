@@ -33,10 +33,12 @@ Two small, dependency-light PHP files taken from a Hypixel SkyBlock profile view
 ## Need help or a custom project?
 
 Stuck setting this up, or want something like it built for your own project? Message me on Discord, I'm happy to help.
- Discord: **`fac.e`** 
+<br>
+Discord: **`fac.e`** 
+<br>
 When you write, it helps to include what you are trying to build, a link or a short description of your current code, and any error message.
 
----
+
 
 ## `lore.php`: normal lore vs pretty lore
 
