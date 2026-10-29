@@ -29,21 +29,11 @@ Two small, dependency-light PHP files taken from a Hypixel SkyBlock profile view
 | [`networth.php`](networth.php) | Estimates the value of every item and pet a player owns and adds it up into a **networth** | **33.94 KB** |
 | | **Total** | **58.93 KB** |
 
-> **Status:** both files were extracted from a working site and checked with `php -l` (syntax only). They have not been
-> run on their own yet, so treat the first run as a test and open an issue if something breaks.
-
----
 
 ## Need help or a custom project?
 
 Stuck setting this up, or want something like it built for your own project? Message me on Discord, I'm happy to help.
-
-| | |
-| --- | --- |
-| **Setup help** | Getting the lore tooltips or the networth calculation running in your own site or bot, fixing errors, adapting it to your data. |
-| **Custom work** | Hypixel SkyBlock tools, profile viewers, price trackers, Minecraft-style UI, PHP web projects: tell me what you have in mind and I'll tell you what's realistic. |
-| **Contact** | Discord: **`fac.e`** |
-
+ Discord: **`fac.e`** 
 When you write, it helps to include what you are trying to build, a link or a short description of your current code, and any error message.
 
 ---
