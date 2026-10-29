@@ -312,3 +312,12 @@ When you write, it helps to include what you are trying to build, a link or a sh
 - Community data from [NotEnoughUpdates-REPO](https://github.com/NotEnoughUpdates/NotEnoughUpdates-REPO).
 - NBT parsing by [aternos/nbt](https://github.com/aternosorg/php-nbt). Pixel font by
   [South-Paw/typeface-minecraft](https://github.com/South-Paw/typeface-minecraft).
+
+---
+
+## Part of
+
+Functions are a part of my **Hypixel Skyblock (Lightweight) Profiler Optimiser**.
+**Dashboard** provides a best way to optimise your setup for any given task (Farming, Mining, Fishing, Foraging).
+
+<img width="1747" height="1088" alt="image" src="https://github.com/user-attachments/assets/8dbea50e-72b9-4b63-90f6-3eb0ce89cd32" />
