@@ -17,6 +17,8 @@
 
 </div>
 
+<img width="540" height="326" alt="image" src="https://github.com/user-attachments/assets/fe19234f-2f19-49f9-b3c6-44fa6f5f5e5c" />
+<img width="550" height="328" alt="image" src="https://github.com/user-attachments/assets/eb4314f3-417a-4cd6-9329-ee40108dc137" />
 
 
 ## What's inside
