@@ -4,9 +4,9 @@ Two small, dependency-light PHP files taken from a Hypixel SkyBlock profile view
 
 | File | What it does | Size |
 | --- | --- | --- |
-| [`lore.php`](lore.php) | Shows item lore as Minecraft-style tooltips, in a **normal** or a **"pretty"** (decorated) mode | 25,583 bytes (**24.98 KB**) |
-| [`networth.php`](networth.php) | Estimates the value of every item and pet a player owns and adds it up into a **networth** | 34,759 bytes (**33.94 KB**) |
-| | **Total** | 60,342 bytes (**58.93 KB**) |
+| [`lore.php`](lore.php) | Shows item lore as Minecraft-style tooltips, in a **normal** or a **"pretty"** (decorated) mode | **24.98 KB** |
+| [`networth.php`](networth.php) | Estimates the value of every item and pet a player owns and adds it up into a **networth** | **33.94 KB** |
+| | **Total** | **58.93 KB** |
 
 (KB = 1,024 bytes. Sizes are of the PHP files only, not of this README or of the data they cache at run time.)
 
