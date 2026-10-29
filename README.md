@@ -19,7 +19,7 @@
 
 <table>
   <tr>
-    <th>DEFAULT LORE</th>
+    <th>DEFAULT LORE (by Face)</th>
     <th>PRETTY LORE (by Face)</th>
   </tr>
   <tr>
