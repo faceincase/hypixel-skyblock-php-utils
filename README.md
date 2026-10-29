@@ -1,4 +1,25 @@
+<div align="center">
+
 # hypixel-skyblock-php-utils
+
+**Minecraft-style item lore tooltips and live networth calculation for Hypixel SkyBlock, in plain PHP.**
+
+![PHP](https://img.shields.io/badge/PHP-8.1%2B-777BB4?logo=php&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-vanilla-F7DF1E?logo=javascript&logoColor=black)
+![CSS](https://img.shields.io/badge/CSS-custom%20properties-1572B6?logo=css3&logoColor=white)
+![Composer](https://img.shields.io/badge/Composer-aternos%2Fnbt-885630?logo=composer&logoColor=white)
+![Hypixel API](https://img.shields.io/badge/Hypixel-API%20v2-FFAA00)
+![Minecraft](https://img.shields.io/badge/Minecraft-lore%20%C2%A7%20codes-62B47A)
+![Size](https://img.shields.io/badge/size-58.93%20KB-informational)
+![Discord](https://img.shields.io/badge/Discord-fac.e-5865F2?logo=discord&logoColor=white)
+
+[What's inside](#whats-inside) · [Lore tooltips](#lorephp-normal-lore-vs-pretty-lore) · [Networth](#networthphp-how-networth-is-calculated) · [Need help?](#need-help-or-a-custom-project)
+
+</div>
+
+---
+
+## What's inside
 
 Two small, dependency-light PHP files taken from a Hypixel SkyBlock profile viewer:
 
@@ -10,6 +31,20 @@ Two small, dependency-light PHP files taken from a Hypixel SkyBlock profile view
 
 > **Status:** both files were extracted from a working site and checked with `php -l` (syntax only). They have not been
 > run on their own yet, so treat the first run as a test and open an issue if something breaks.
+
+---
+
+## Need help or a custom project?
+
+Stuck setting this up, or want something like it built for your own project? Message me on Discord, I'm happy to help.
+
+| | |
+| --- | --- |
+| **Setup help** | Getting the lore tooltips or the networth calculation running in your own site or bot, fixing errors, adapting it to your data. |
+| **Custom work** | Hypixel SkyBlock tools, profile viewers, price trackers, Minecraft-style UI, PHP web projects: tell me what you have in mind and I'll tell you what's realistic. |
+| **Contact** | Discord: **`fac.e`** |
+
+When you write, it helps to include what you are trying to build, a link or a short description of your current code, and any error message.
 
 ---
 
