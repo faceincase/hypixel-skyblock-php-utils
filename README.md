@@ -8,8 +8,6 @@ Two small, dependency-light PHP files taken from a Hypixel SkyBlock profile view
 | [`networth.php`](networth.php) | Estimates the value of every item and pet a player owns and adds it up into a **networth** | **33.94 KB** |
 | | **Total** | **58.93 KB** |
 
-(KB = 1,024 bytes. Sizes are of the PHP files only, not of this README or of the data they cache at run time.)
-
 > **Status:** both files were extracted from a working site and checked with `php -l` (syntax only). They have not been
 > run on their own yet, so treat the first run as a test and open an issue if something breaks.
 
