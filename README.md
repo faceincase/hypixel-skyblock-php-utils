@@ -318,6 +318,7 @@ When you write, it helps to include what you are trying to build, a link or a sh
 ## Part of
 
 Functions are a part of my **Hypixel Skyblock (Lightweight) Profiler Optimiser**.
+<br>
 **Dashboard** provides a best way to optimise your setup for any given task (Farming, Mining, Fishing, Foraging).
 
 <img width="1747" height="1088" alt="image" src="https://github.com/user-attachments/assets/8dbea50e-72b9-4b63-90f6-3eb0ce89cd32" />
