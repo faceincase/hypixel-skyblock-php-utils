@@ -19,8 +19,8 @@
 
 <table>
   <tr>
-    <th>Before</th>
-    <th>After</th>
+    <th>DEFAULT LORE</th>
+    <th>PRETTY LORE (by Face)</th>
   </tr>
   <tr>
     <td><img width="420" alt="Before: first screen" src="https://github.com/user-attachments/assets/fe19234f-2f19-49f9-b3c6-44fa6f5f5e5c" /></td>
