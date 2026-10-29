@@ -1,6 +1,6 @@
 <div align="center">
 
-# Hypixel Skyblock PHP Utils
+# Hypixel Skyblock ◆ PHP UTILS
 
 **Minecraft-style item lore tooltips and live networth calculation for Hypixel SkyBlock, in plain PHP.**
 
